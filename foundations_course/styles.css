@@ -1,0 +1,8 @@
+* {
+    color: purple;
+    font-family: "Times New Roman", serif;
+}
+
+.ancestor .contents {
+    background-color: aquamarine;
+}

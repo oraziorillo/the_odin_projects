@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
         <title>Foundations Course</title>
     </head>
     <body>
@@ -13,5 +14,21 @@
         <img src="https://www.theodinproject.com/mstile-310x310.png" alt="Odin Project Logo" height="310" width="310">
         <p>Adding an image within project:</p>
         <img src="images/dog.jpg" alt="A dog" height="310" width="310">
+        <div class="ancestor">
+            <!-- A -->
+            Content of the A element (class="ancestor")
+            <div class="contents">
+                <!-- B -->
+                Content of the B element (class="contents")
+                <div class="contents">
+                    <!-- C -->
+                    Content of the C element (class="contents")
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <!-- D -->
+            Content of the D element (class="contents")
+        </div>
     </body>
 </html>
