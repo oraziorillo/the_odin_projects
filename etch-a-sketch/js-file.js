@@ -22,3 +22,6 @@ pInDiv.textContent = "ME TOO!";
 div.appendChild(pInDiv);
 
 container.appendChild(div);
+
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
