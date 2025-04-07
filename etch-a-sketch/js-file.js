@@ -36,3 +36,7 @@ function alertFunction() {
 }
 
 btn2.addEventListener("click", alertFunction);
+
+btn2.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+});
