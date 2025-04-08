@@ -4,6 +4,7 @@
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 button {
     background-color: lightblue;
@@ -20,4 +21,15 @@ button:active {
     background-color: rgb(152, 187, 199);
     color: #1f2937;
     transform: translateY(4px);
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
+
+.score {
+    justify-items: center;
+    align-content: center;   
 }

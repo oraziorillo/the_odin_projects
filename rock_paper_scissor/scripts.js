@@ -39,22 +39,55 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame() {
 
-    while (humanScore < 3 && computerScore < 3) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-    }
+    humanScore = 0;
+    computerScore = 0;
 
-    if (humanScore > computerScore) {
-        console.log(`You win the game! Final score: You ${humanScore} - Computer ${computerScore}`);
-    }
-    else {
-        console.log(`Computer wins the game! Final score: You ${humanScore} - Computer ${computerScore}`);
-    }
+    const game = document.createElement("div");
+    game.setAttribute("class", "game");
+    
+    
+    const userScoreElement = document.createElement("div");
+    userScoreElement.setAttribute("class", "score");
+    const userScoreTitle = document.createElement("h2");    
+    userScoreTitle.textContent = "Your score:"
+    userScoreElement.appendChild(userScoreTitle);
+    const userScoreNumber = document.createElement("p");
+    userScoreNumber.textContent = humanScore.toString();
+    userScoreElement.appendChild(userScoreNumber);
+
+    const computerScoreElement = document.createElement("div");
+    computerScoreElement.setAttribute("class", "score");
+    const computerScoreTitle = document.createElement("h2");    
+    computerScoreTitle.textContent = "Computer score:"
+    computerScoreElement.appendChild(computerScoreTitle);
+    const computerScoreNumber = document.createElement("p");
+    computerScoreNumber.textContent = computerScore.toString();
+    computerScoreElement.appendChild(computerScoreNumber);
+
+    const scores = document.createElement("div")
+    scores.setAttribute("class", "scores");
+    scores.appendChild(userScoreElement);
+    scores.appendChild(computerScoreElement);
+
+    game.appendChild(scores);
+    document.getElementsByClassName("container")[0].appendChild(game);
+
+
+    // while (humanScore < 3 && computerScore < 3) {
+    //     const humanSelection = getHumanChoice();
+    //     const computerSelection = getComputerChoice();
+    //     playRound(humanSelection, computerSelection);
+    // }
+
+    // if (humanScore > computerScore) {
+    //     console.log(`You win the game! Final score: You ${humanScore} - Computer ${computerScore}`);
+    // }
+    // else {
+    //     console.log(`Computer wins the game! Final score: You ${humanScore} - Computer ${computerScore}`);
+    // }
 }
 
 let humanScore = 0;
 let computerScore = 0;
-window.addEventListener("DOMContentLoaded", (event) => {
-    document.getElementsByTagName('button')[0].addEventListener("click", playGame);
-});
+
+document.getElementsByTagName('button')[0].addEventListener("click", playGame);
