@@ -29,10 +29,11 @@ div.left {
 }
 
 div.right {
-    flex: 1 1 0;
+    flex: 2 1 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 3rem;
 }
 
 .logo-banner {
