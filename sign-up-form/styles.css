@@ -7,9 +7,11 @@
 
 * {
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
+    --light-gray: #F9FAFB;
     height: 100%;
 }
 
@@ -33,7 +35,6 @@ div.right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
 }
 
 .logo-banner {
@@ -82,4 +83,36 @@ div.right {
 
 .credits a {
     color: inherit;
+}
+
+div.right h3 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.header-container {
+    background-color: var(--light-gray);
+    flex: 1;
+    padding: 0 3rem;
+    position: relative;
+}
+
+.header-container div {
+    position: absolute;
+    bottom: 0;
+}
+
+.form-container {
+    flex: 0;
+    padding: 0 3rem;
+}
+
+.form {
+    display: flex;
+}
+
+.cta-container {
+    background-color: var(--light-gray);
+    flex: 1;
+    padding: 0 3rem;
 }
