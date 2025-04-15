@@ -11,7 +11,11 @@
 }
 
 :root {
-    --light-gray: #F9FAFB;
+    --background-secondary-color: #F9FAFB;
+    --input-box-background-color: #FFFEFE;
+    --input-box-border-color: #EAEBEF;
+    --input-box-invalid-border-color: #D46F6C;
+    --input-box-focus-border-color: #456CDE;
     height: 100%;
 }
 
@@ -91,7 +95,7 @@ div.right h3 {
 }
 
 .header-container {
-    background-color: var(--light-gray);
+    background-color: var(--background-secondary-color);
     flex: 1;
     padding: 0 3rem;
     position: relative;
@@ -104,15 +108,69 @@ div.right h3 {
 
 .form-container {
     flex: 0;
-    padding: 0 3rem;
+    padding: 0 3rem 3rem 3rem;
 }
 
 .form {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+form input {
+    width: 25rem;
+    padding: 1rem;
+    background-color: var(--input-box-background-color);
+    border: var(--input-box-border-color) solid 2px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+input:focus {
+    border: var(--input-box-focus-border-color) solid 2px;
+    outline: none;
+}
+
+input:invalid {
+    border: var(--input-box-invalid-border-color) solid 2px;
+    outline: none;
 }
 
 .cta-container {
-    background-color: var(--light-gray);
+    background-color: var(--background-secondary-color);
     flex: 1;
     padding: 0 3rem;
+}
+
+.cta-container button {
+    margin: 2rem 0;
+    padding: 1rem 4rem;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: #596D48;
+}
+
+.cta-container p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cta-container a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
 }
