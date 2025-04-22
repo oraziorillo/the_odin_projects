@@ -19,4 +19,10 @@ div.header {
 
 div.sidebar {
     grid-row: 1 / 3;
+    background-color: var(--primary-color);
+    color: var(--negative-text-color);
+}
+
+div.content {
+    background-color: var(--background-color);
 }
