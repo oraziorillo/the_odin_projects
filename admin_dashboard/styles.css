@@ -6,3 +6,17 @@
     --secondary-text-color: #636363;
     --background-color: #E2E8F0;
 }
+
+div.container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: minmax(300px, 400px) 1fr;
+}
+
+div.header {
+    grid-column: 2;
+}
+
+div.sidebar {
+    grid-row: 1 / 3;
+}
