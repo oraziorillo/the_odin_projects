@@ -70,6 +70,29 @@ div.sidebar .line img {
     height: 20px;
 }
 
+
+
+/*** Header style ***/ 
+
+div.header {
+    grid-column: 2;
+    display: flex;
+}
+
+div.header img.icon {
+    width: 30px;
+    height: 30px;
+}
+
+div.header img.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/*** Main section style ***/
+
 div.main {
     background-color: var(--background-color);
     display: grid;
@@ -86,14 +109,6 @@ div.main .section h2 {
     color: var(--primary-text-color);
     font-weight: 500;
 }
-
-
-/*** Header style ***/ 
-
-div.header {
-    grid-column: 2;
-}
-
 
 /*** Projects section style ***/
 
