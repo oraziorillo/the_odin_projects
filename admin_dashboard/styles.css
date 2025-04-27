@@ -71,12 +71,35 @@ div.sidebar .line img {
 }
 
 
-
 /*** Header style ***/ 
 
 div.header {
-    grid-column: 2;
-    display: flex;
+    grid-row: 1 / 2;  /* Changed from grid: 1 / 2 */
+    grid-column: 2 / 3; /* Added this to ensure header is in correct position */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 40px 20px 40px; /* Added padding for better spacing */
+}
+
+div.header-top-left {
+    grid-row: 1 / 2;  /* Changed from grid: 1 / 1 */
+    grid-column: 1 / 2;
+}
+
+div.header-top-right {
+    grid-row: 1 / 2;  /* Changed from grid: 1 / 2 */
+    grid-column: 2 / 3;
+}
+
+div.header-bottom-left {
+    grid-row: 2 / 3;  /* Changed from grid: 2 / 1 */
+    grid-column: 1 / 2;
+}
+
+div.header-bottom-right {
+    grid-row: 2 / 3;  /* Changed from grid: 2 / 2 */
+    grid-column: 2 / 3;
 }
 
 div.header img.icon {
