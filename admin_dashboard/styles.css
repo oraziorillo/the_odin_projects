@@ -80,7 +80,7 @@ div.header {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
     padding: 20px 40px 20px 40px;
-    gap: 20px;
+    gap: 40px;
 }
 
 div.header-top-left {
@@ -103,6 +103,10 @@ div.header-top-left input.search-bar {
 div.header-top-right {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 div.header-bottom-left {
@@ -116,13 +120,13 @@ div.header-bottom-right {
 }
 
 div.header img.icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 div.header img.profile {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
