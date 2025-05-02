@@ -112,6 +112,15 @@ div.header-top-right {
 div.header-bottom-left {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+div.header-bottom-left .welcome-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 div.header-bottom-right {
@@ -125,9 +134,27 @@ div.header img.icon {
 }
 
 div.header img.profile {
+    border-radius: 50%;
+}
+
+div.header-top-right img.profile {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+}
+
+div.header-bottom-left img.profile {
+    width: 50px;
+    height: 50px;
+}
+
+div.header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+div.header h3 {
+    margin: 0;
+    font-size: 12px;
 }
 
 
