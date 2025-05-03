@@ -273,20 +273,21 @@ div.main .announcements{
     border-radius: 8px;
     padding: 24px 40px 24px 40px;
     flex: 1;
+    margin: 0;
+    list-style-type: none;
 }
 
 li.announcement {
     list-style: none;
 }
 
-/* .announcement {
-    padding: 15px 0;
+.announcement {
     border-bottom: 1px solid #e0e0e0;
 }   
-  
+
 .announcement:last-child {
     border-bottom: none;
-} */
+}
 
 
 /*** Trending section style ***/
