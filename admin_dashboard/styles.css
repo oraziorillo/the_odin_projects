@@ -109,6 +109,10 @@ div.header-top-right {
     justify-content: flex-end;
 }
 
+div.header-top-right .h3 {
+    font-size: 14px;
+}
+
 div.header-bottom-left {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -126,6 +130,20 @@ div.header-bottom-left .welcome-stack {
 div.header-bottom-right {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.header-bottom-right button {
+    background-color: var(--primary-color);
+    border: 0px;
+    border-radius: 40px;
+    font-size: 14x;
+    font-weight: 550;
+    color: var(--negative-text-color);
+    padding: 10px 25px;
 }
 
 div.header img.icon {
@@ -256,6 +274,20 @@ div.main .announcements{
     padding: 24px 40px 24px 40px;
     flex: 1;
 }
+
+li.announcement {
+    list-style: none;
+}
+
+/* .announcement {
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}   
+  
+.announcement:last-child {
+    border-bottom: none;
+} */
+
 
 /*** Trending section style ***/
 
