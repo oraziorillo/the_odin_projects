@@ -268,13 +268,15 @@ div.main .section h2 {
     grid-column: 2;
     grid-row: 1;
 }
-div.main .announcements{
+div.main ul.announcements {
+    margin: 0;
     background-color: white;
     border-radius: 8px;
     padding: 24px 40px 24px 40px;
     flex: 1;
     margin: 0;
     list-style-type: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 li.announcement {
@@ -297,9 +299,47 @@ li.announcement {
     grid-row: 2;
 }
 
-div.main .trending {
+div.main ul.trending {
+    margin: 0;
     background-color: white;
     border-radius: 8px;
     padding: 24px 40px 24px 40px;
     flex: 1;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+li.trending-app {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li.trending-app img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    flex: 0;
+}
+
+li.trending-app .app-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li.trending-app .app-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+
+li.trending-app .app-info p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--secondary-text-color);
 }
